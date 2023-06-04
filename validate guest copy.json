@@ -1,0 +1,576 @@
+{
+	"info": {
+		"_postman_id": "8beb2c10-d1c7-449a-b813-6889a8ee32b8",
+		"name": "ferngroup",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25834354"
+	},
+	"item": [
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "info@sgsrgroup.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "Unread#2022$",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://pathik.guru/login/validate_login",
+					"protocol": "https",
+					"host": [
+						"pathik",
+						"guru"
+					],
+					"path": [
+						"login",
+						"validate_login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Dashboard",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://pathik.guru/dashboard",
+					"protocol": "https",
+					"host": [
+						"pathik",
+						"guru"
+					],
+					"path": [
+						"dashboard"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://pathik.guru/dashboard/add",
+					"protocol": "https",
+					"host": [
+						"pathik",
+						"guru"
+					],
+					"path": [
+						"dashboard",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Validate Guest",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "first_name",
+							"value": "Tamballa",
+							"description": "Required",
+							"type": "text"
+						},
+						{
+							"key": "middle_name",
+							"value": "Palli",
+							"type": "text"
+						},
+						{
+							"key": "last_name",
+							"value": "Kumar",
+							"description": "Required",
+							"type": "text"
+						},
+						{
+							"key": "company_name",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "house_flat_no",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "address",
+							"value": "3-19/1 SREENIVASA PURAM NEAR WATER TANK",
+							"description": "Required",
+							"type": "text"
+						},
+						{
+							"key": "locality",
+							"value": "Chintur",
+							"description": "Required",
+							"type": "text"
+						},
+						{
+							"key": "city",
+							"value": "Chintur",
+							"description": "Required",
+							"type": "text"
+						},
+						{
+							"key": "district",
+							"value": "Chintur",
+							"description": "Required",
+							"type": "text"
+						},
+						{
+							"key": "zip_code",
+							"value": "517507",
+							"description": "Required",
+							"type": "text"
+						},
+						{
+							"key": "country",
+							"value": "101",
+							"description": "Required ( India -> 101 )",
+							"type": "text"
+						},
+						{
+							"key": "state",
+							"value": "2",
+							"description": "Required ( Gujrat -> 12 )",
+							"type": "text"
+						},
+						{
+							"key": "dob",
+							"value": "11-01-1959",
+							"description": "Required ( 16-05-2023 )",
+							"type": "text"
+						},
+						{
+							"key": "mobile_no",
+							"value": "8099666099",
+							"description": "Required ( len -> 10 to 13 )",
+							"type": "text"
+						},
+						{
+							"key": "phone_no",
+							"value": "8099666099",
+							"description": "Required ( len -> 10 to 13 )",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "tbrtrk@gmail.com",
+							"description": "Required",
+							"type": "text"
+						},
+						{
+							"key": "coming_from",
+							"value": "Chintur",
+							"description": "Required",
+							"type": "text"
+						},
+						{
+							"key": "going_to",
+							"value": "Chintur",
+							"description": "Required",
+							"type": "text"
+						},
+						{
+							"key": "doc_type",
+							"value": "1",
+							"description": "Required ( Aadhaar -> 1 )",
+							"type": "text"
+						},
+						{
+							"key": "doc_no",
+							"value": "9227 4182 4099",
+							"description": "Required ( len min 5)",
+							"type": "text"
+						},
+						{
+							"key": "doc_img[]",
+							"description": "Required (image-png,gif,jpeg, size - 250kb)",
+							"type": "file",
+							"src": "/Users/akshmitdewan/Downloads/WhatsApp Image 2023-05-29 at 3.37.07 PM.jpeg"
+						},
+						{
+							"key": "room_no",
+							"value": "202",
+							"description": "Required",
+							"type": "text"
+						},
+						{
+							"key": "checkin_date",
+							"value": "29-05-2023",
+							"description": "Required ( 16-05-2023 )",
+							"type": "text"
+						},
+						{
+							"key": "checkin_time",
+							"value": "14:00",
+							"description": "Required ( 17:15 )",
+							"type": "text"
+						},
+						{
+							"key": "checkout_date",
+							"value": "30-05-2023",
+							"description": "Required ( 16-05-2023 )",
+							"type": "text"
+						},
+						{
+							"key": "checkout_time",
+							"value": "12:00",
+							"description": "Required ( 17:15 )",
+							"type": "text"
+						},
+						{
+							"key": "child",
+							"value": "0",
+							"description": "Required ( integer )",
+							"type": "text"
+						},
+						{
+							"key": "adult",
+							"value": "1",
+							"description": "Required ( integer )",
+							"type": "text"
+						},
+						{
+							"key": "vehicle_type",
+							"value": "Other",
+							"description": "Required ( select )",
+							"type": "text"
+						},
+						{
+							"key": "vehicle_registration_no",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "other_full_name[]",
+							"value": "",
+							"description": "Required",
+							"type": "text"
+						},
+						{
+							"key": "other_mobile_number[]",
+							"value": "",
+							"description": "Required ( integer )",
+							"type": "text"
+						},
+						{
+							"key": "other_doc_type[]",
+							"value": "",
+							"description": "Required ( select )",
+							"type": "text"
+						},
+						{
+							"key": "other_document_number[]",
+							"value": "",
+							"description": "Required",
+							"type": "text"
+						},
+						{
+							"key": "action",
+							"value": "Add",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://pathik.guru/dashboard/validate_guest",
+					"protocol": "https",
+					"host": [
+						"pathik",
+						"guru"
+					],
+					"path": [
+						"dashboard",
+						"validate_guest"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Validate Guest Copy",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "first_name",
+							"value": "Kajal",
+							"description": "Required",
+							"type": "text"
+						},
+						{
+							"key": "middle_name",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "last_name",
+							"value": "Gangani",
+							"description": "Required",
+							"type": "text"
+						},
+						{
+							"key": "company_name",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "house_flat_no",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "address",
+							"value": "DO Khengar Gangani\nBehind Automatic Company. S.T. Marg, Road No. 7 A/14,\nDharamveer Anand CHS, Maharastra Nagar",
+							"description": "Required",
+							"type": "text"
+						},
+						{
+							"key": "locality",
+							"value": "Thane",
+							"description": "Required",
+							"type": "text"
+						},
+						{
+							"key": "city",
+							"value": "Thane",
+							"description": "Required",
+							"type": "text"
+						},
+						{
+							"key": "district",
+							"value": "Thane",
+							"description": "Required",
+							"type": "text"
+						},
+						{
+							"key": "zip_code",
+							"value": "400604",
+							"description": "Required",
+							"type": "text"
+						},
+						{
+							"key": "country",
+							"value": "india",
+							"description": "Required ( India -> 101 )",
+							"type": "text"
+						},
+						{
+							"key": "state",
+							"value": "maharashtra",
+							"description": "Required ( Gujrat -> 12 )",
+							"type": "text"
+						},
+						{
+							"key": "dob",
+							"value": "05-05-1993",
+							"description": "Required ( 16-05-2023 )",
+							"type": "text"
+						},
+						{
+							"key": "mobile_no",
+							"value": "9820355183",
+							"description": "Required ( len -> 10 to 13 )",
+							"type": "text"
+						},
+						{
+							"key": "phone_no",
+							"value": "9820355183",
+							"description": "Required ( len -> 10 to 13 )",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "saanjay3011@gmail.com",
+							"description": "Required",
+							"type": "text"
+						},
+						{
+							"key": "coming_from",
+							"value": "Thane",
+							"description": "Required",
+							"type": "text"
+						},
+						{
+							"key": "going_to",
+							"value": "Thane",
+							"description": "Required",
+							"type": "text"
+						},
+						{
+							"key": "doc_type",
+							"value": "1",
+							"description": "Required ( Aadhaar -> 1 )",
+							"type": "text"
+						},
+						{
+							"key": "doc_no",
+							"value": "270715127847",
+							"description": "Required ( len min 5)",
+							"type": "text"
+						},
+						{
+							"key": "doc_img[]",
+							"description": "Required (image-png,gif,jpeg, size - 250kb)",
+							"type": "file",
+							"src": "/Users/akshmitdewan/Downloads/kajal.jpeg"
+						},
+						{
+							"key": "doc_img[]",
+							"type": "file",
+							"src": [],
+							"disabled": true
+						},
+						{
+							"key": "room_no",
+							"value": "306",
+							"description": "Required",
+							"type": "text"
+						},
+						{
+							"key": "checkin_date",
+							"value": "03-06-2023",
+							"description": "Required ( 16-05-2023 )",
+							"type": "text"
+						},
+						{
+							"key": "checkin_time",
+							"value": "14:00",
+							"description": "Required ( 17:15 )",
+							"type": "text"
+						},
+						{
+							"key": "checkout_date",
+							"value": "04-06-2023",
+							"description": "Required ( 16-05-2023 )",
+							"type": "text"
+						},
+						{
+							"key": "checkout_time",
+							"value": "12:00",
+							"description": "Required ( 17:15 )",
+							"type": "text"
+						},
+						{
+							"key": "child",
+							"value": "0",
+							"description": "Required ( integer )",
+							"type": "text"
+						},
+						{
+							"key": "adult",
+							"value": "2",
+							"description": "Required ( integer )",
+							"type": "text"
+						},
+						{
+							"key": "vehicle_type",
+							"value": "Other",
+							"description": "Required ( select )",
+							"type": "text"
+						},
+						{
+							"key": "vehicle_registration_no",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "other_full_name[]",
+							"value": "Bhavesh Tank",
+							"description": "Required",
+							"type": "text"
+						},
+						{
+							"key": "other_full_name[]",
+							"value": "Jahanvi K Mer",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "other_mobile_number[]",
+							"value": "9820355183",
+							"description": "Required ( integer )",
+							"type": "text"
+						},
+						{
+							"key": "other_mobile_number[]",
+							"value": "7738516183",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "other_doc_type[]",
+							"value": "1",
+							"description": "Required ( select )",
+							"type": "text"
+						},
+						{
+							"key": "other_doc_type[]",
+							"value": "3",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "other_document_number[]",
+							"value": "958952493001",
+							"description": "Required",
+							"type": "text"
+						},
+						{
+							"key": "other_document_number[]",
+							"value": "GJ15 20160003950",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "action",
+							"value": "Add",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/upload",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"upload"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
